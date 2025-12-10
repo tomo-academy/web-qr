@@ -430,15 +430,6 @@ const App: React.FC = () => {
                 </div>
             </form>
 
-            {/* Hint Text */}
-            <div className="mt-3 text-center opacity-0 animate-fade-in" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
-                 <p className="text-xs font-medium text-white/40 tracking-wide">
-                    {websiteTheme === 'dark' ? '✨ Capturing in Dark Mode' : '📸 Capturing in Light Mode'} 
-                    <span className="mx-2">•</span> 
-                    {selectedViewport.label} View
-                 </p>
-            </div>
-
             {/* Error Message */}
             {status.step === 'error' && (
                 <div className="mt-4 p-3 rounded-xl bg-red-500/20 border border-red-500/30 text-red-100 text-sm text-center backdrop-blur-md animate-fade-in">
